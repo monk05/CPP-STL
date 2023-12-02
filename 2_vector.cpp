@@ -7,6 +7,7 @@ int main(){
     vtr.push_back(2);
     vtr.push_back(8);
     vtr.push_back(5);
+    vtr.push_back(10);
     for(int i:vtr){
         cout<<i<<" ";
     }
@@ -22,7 +23,11 @@ int main(){
     for(int i:vtr){
         cout<<i<<" ";
     }
-    
+    cout<<endl<<"copying old into new "<<endl;
+    vector <int> vtr1(vtr);
+    for (int i:vtr1){
+        cout<<i<<" ";
+    }
 
 
 }
